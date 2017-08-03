@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    background: url('/images/bgImg.png');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+/*头部最大导航栏*/
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgb(241, 241, 241);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/*头部的导航栏内容*/
+#header-ul {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*头部的导航栏内容 下的li*/
+#header-ul1 li {
+    list-style-type: none;
+    float: left;
+    font-size: 1.2rem;
+    padding: 2% 1.5%;
+    margin-bottom: -1.1%;
+}
+
+/*首页点击的状态*/
+.active {
+    border-bottom: 3px solid black;
+    background-color: rgb(251, 251, 251);
+}
+
+/*导航栏右边的内容*/
+#header-ul2 {
+    float: right;
+    width: 30%;
+    /*border: 1px solid black;*/
+    padding: 1.6%;
+    margin-bottom: -2.2%;
+}
+
+/*导航栏右边内容的铅笔*/
+.header-ul2-li1 {
+    border: 1px solid rgb(64, 184, 117);
+    padding: 4% 1.2%;
+    border-radius: 50%;
+}
+
+/*导航栏右边内容的铅笔的铅笔图片*/
+.header-ul2-li1 img {
+    width: 10%;
+    vertical-align: middle;
+    background-color: rgb(64, 184, 117);
+    border-radius: 50%;
+    padding: 1%;
+}
+
+/*登录注册按钮*/
+.btn {
+    color: rgb(64, 184, 117);
+    width: 40%;
+    padding: 3% 0;
+    border-radius: 45px;
+    border: 1px solid rgb(64, 184, 117);
+    background-color: white;
+    outline: none;
+    margin-left: 6%;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(61, 174, 110);
+    color: white;
+}
+
+/*中间内容*/
+#main {
+    /*border: 1px solid black;*/
+    width: 70%;
+    margin: 8% auto;
+}
+
+/*中间内容上边的图片*/
+.main-img {
+    /*border: 1px solid red;*/
+    overflow: hidden;
+}
+
+/*上边图片的左边内容*/
+.main-img-left {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+.main-img-left img {
+    width: 100%;
+    height: 100%;
+    float: left;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+}
+
+/*图片上的文字蒙版*/
+.mask-text {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 20px;
+    padding: 5% 0 5% 3%;
+    font-weight: lighter;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: none;
+}
+
+/*图片蒙版的前两个字*/
+.mask-text span {
+    border-top: 1px solid white;
+    padding-top: 2%;
+}
+
+/*上边图片的右边*/
+.main-img-right {
+    float: right;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}
+
+/*右边内容下的div*/
+.main-img-right-div {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    float: left;
+    overflow: hidden;
+
+}
+
+/*右边内容下的图片*/
+.main-img-right-div img {
+    width: 100%;
+    height: 100%;
+    float: left;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+/*每个模块的标题*/
+.small-title {
+    margin: 5% 0;
+    width: 100%;
+}
+
+/*每个模块标题前面的小方形*/
+.small-title span {
+    padding: 0.1% 1%;
+    background-color: black;
+    margin-right: 1%;
+}
+
+/*阅读模块*/
+.main-read {
+    width: 100%;
+}
+
+/*每一文章*/
+.main-read-list {
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    font-weight: lighter;
+    position: relative;
+    background-color: white;
+    border: 1px solid rgb(232, 232, 232);
+    margin-top: 1%;
+
+}
+
+/*每一个文章的左边*/
+.main-read-list-left {
+    float: left;
+    padding: 1%;
+    width: 65%;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/*每一个文章的右边*/
+.main-read-list-right {
+    width: 30%;
+    float: right;
+}
+
+/*作者下的黑线*/
+.liner {
+    border-bottom: 1px solid black;
+    width: 7%;
+    margin: 3% 0;
+}
+
+/*点击全文*/
+.all-text {
+    background: url("/images/viewall.png") no-repeat right;
+    padding: 0 2%;
+    color: rgb(61, 174, 110);
+
+}
+
+/*阅读量*/
+.quantity {
+    position: absolute;
+    bottom: 1%;
+    color: rgb(200, 200, 200);
+}
+
+/*悬停的文字颜色*/
+.green:hover {
+    color: rgb(61, 174, 110);
+}
+
+/*中间的唱歌*/
+.main-song {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+/*唱歌的每一个*/
+.song1 {
+    width: 30%;
+    border: 1px solid lightgray;
+    font-weight: lighter;
+    display: inline-block;
+
+}
+
+/*唱哥存放图片的容器*/
+.song1-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/*图片*/
+.song1-img img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+/*下边的文字*/
+.song1-text {
+    padding: 3%;
+    font-size: 10px;
+}
+
+/*歌手*/
+.singer {
+    padding: 2% 0;
+
+}
+
+/*图片上的蒙版*/
+.mask-active {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*蒙版里的开始播放键*/
+.mask-active img {
+    width: 25%;
+    height: 25%;
+    margin-top: 40%;
+}
+
+/*人气片刻内容*/
+.hot {
+    width: 100%;
+}
+
+/*人气片刻每一个*/
+.hot-one {
+    width: 22.5%;
+    background: url("/images/user-bg.png") no-repeat;
+    background-size: cover;
+    padding: 5% 1%;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: .1%;
+}
+
+/*每一个中的左半部分*/
+.hot-left {
+    text-align: center;
+    width: 42%;
+    float: left;
+}
+
+/*左半部分头像*/
+.hot-left-img {
+    border-radius: 50%;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+/*左半部分音乐人小标*/
+.hot-music {
+    width: 50%;
+    margin: 2% auto 0 auto;
+}
+
+/*每一个中的右半部分*/
+.hot-right {
+    float: right;
+    width: 45%;
+    padding: 5%;
+}
+
+/*右半部分歌手名*/
+.hot-singer {
+    font-weight: lighter;
+}
+
+/*查看更多 */
+.more {
+    width: 20%;
+    text-align: center;
+    border-radius: 45px;
+    margin: 5% auto;
+    border: 1px solid rgb(163, 213, 182);
+}
+
+/*查看更多的文字*/
+.more-text {
+    /*width: 90%;*/
+    height: 50px;
+    margin: 1.5%;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    background-color: rgb(105, 189, 137);
+    border-radius: 45px;
+}
+
+/*悬停查看更多*/
+.more-text:hover {
+    background-color: rgb(61, 174, 110);
+}
+
+/*底部*/
+.footer {
+    width: 100%;
+    background-color: rgb(26, 24, 24);
+    padding: 1% 0;
+    /*height: 30%;*/
+}
+
+/*底部中间内容*/
+.footer-main {
+    width: 80%;
+    /*border: 1px solid white;*/
+    margin: 0 auto;
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    overflow: hidden;
+}
+
+/* 底部中间左边内容*/
+.footer-main-left {
+    background: url("/images/foot-logo.png") no-repeat left;
+    background-size: 15%;
+    padding: 2% 0 2% 10%;
+    width: 40%;
+    /*border: 1px solid lawngreen;*/
+    float: left;
+}
+
+/*底部中间左边内容 的信息*/
+.footer-main-left-ul {
+    list-style-type: none;
+}
+
+.footer-main-left-ul li {
+    float: left;
+    margin-left: 3%;
+}
+
+.footer-main-right {
+    /*width: 40%;*/
+    width: 30%;
+    /*border: 1px solid brown;*/
+    float: left;
+    padding: 1.5% 0 1.5% 0;
+}
+
+.footer-main-right img {
+    width: 10%;
+    margin-left: 10%;
+
+}
+.touch-top {
+    text-align: center;
+    background-color: rgb(225,225,225);
+    width: 3%;
+    height: 5%;
+    border-radius: 50%;
+    position: fixed;
+    bottom:15%;
+    right: 2%;
+    display: none;
+}
+.touch-top:hover {
+    background-color: rgb(134,201,160);
+}
+.touch-top img {
+    width: 100%;
+    height: 100%;
+}
